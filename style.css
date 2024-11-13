@@ -47,13 +47,13 @@ h1, label {
 }
 
 .indicator-bar {
-  background-image: url("../assets/images/bg-sidebar-mobile.svg");
+  background-image: url(assets/images/bg-sidebar-mobile.svg);
   background-repeat: no-repeat;
   background-size: cover;
 }
 @media (min-width: 800px) {
   .indicator-bar {
-    background-image: url("../assets/images/bg-sidebar-desktop.svg");
+    background-image: url(assets/images/bg-sidebar-desktop.svg);
   }
 }
 
