@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi Step Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="indicator-bar">
+        <div class="indicator">
+          <div class="indicator-circle">1</div>
+          <div class="indicator-text">
+            <span>step 1</span>
+            <span>your info</span>
+          </div>
+        </div>
+        <div class="indicator">
+          <div class="indicator-circle">2</div>
+          <div class="indicator-text">
+            <span>step 2</span>
+            <span>select plan</span>
+          </div>
+        </div>
+        <div class="indicator">
+          <div class="indicator-circle">3</div>
+          <div class="indicator-text">
+            <span>step 3</span>
+            <span>add-ons</span>
+          </div>
+        </div>
+        <div class="indicator">
+          <div class="indicator-circle">4</div>
+          <div class="indicator-text">
+            <span>step 4</span>
+            <span>summary</span>
+          </div>
+        </div>
+      </div>
+
+      <form>
+        <div class="step" id="step-1">
+          <div class="intro">
+            <h1>Personal info</h1>
+            <p class="cool-grey">
+              Please provide your name, email address, and phone number.
+            </p>
+          </div>
+          <div class="content">
+            <div class="input-field" id="name-input">
+              <div class="label-error">
+                <label for="name">Name</label>
+                <div class="form-error" id="name-error">
+                  This field is required
+                </div>
+              </div>
+              <input
+                type="text"
+                id="name"
+                placeholder="e.g. Stephen King"
+                autocomplete="off"
+                required
+              />
+            </div>
+
+            <div class="input-field" id="email-input">
+              <div class="label-error">
+                <label for="email">Email Address</label>
+                <div class="form-error" id="email-error">
+                  This field is required
+                </div>
+              </div>
+              <input
+                type="email"
+                id="email"
+                placeholder="e.g. stephenking@lorem.com"
+                autocomplete="off"
+                required
+              />
+            </div>
+
+            <div class="input-field" id="number-input">
+              <div class="label-error">
+                <label for="number">Phone Number</label>
+                <div class="form-error" id="number-error">
+                  This field is required
+                </div>
+              </div>
+              <input
+                type="text"
+                id="number"
+                placeholder="e.g. +1 234 567 890"
+                autocomplete="off"
+                required
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="step" id="step-2">
+          <div class="intro">
+            <h1>Select your plan</h1>
+            <p class="cool-grey">
+              You have the option of monthly or yearly billing.
+            </p>
+          </div>
+          <div class="content">
+            <div class="plan">
+              <div class="image">
+                <img src="assets/images/icon-arcade.svg" alt="arcade" />
+              </div>
+              <div class="text">
+                <div class="plan-title">Arcade</div>
+                <div class="price">
+                  <div class="price-monthly cool-grey">
+                    $<span class="num">9</span>/mo
+                  </div>
+                  <div class="price-yearly">
+                    <span class="cool-grey"
+                      >$<span class="num">90</span>/yr</span
+                    >
+                    <span>2 month free</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="plan">
+              <div class="image">
+                <img src="assets/images/icon-advanced.svg" alt="advanced" />
+              </div>
+              <div class="text">
+                <div class="plan-title">Advanced</div>
+                <div class="price">
+                  <div class="price-monthly cool-grey">
+                    $<span class="num">12</span>/mo
+                  </div>
+                  <div class="price-yearly">
+                    <span class="cool-grey"
+                      >$<span class="num">120</span>/yr</span
+                    >
+                    <span>2 month free</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="plan">
+              <div class="image">
+                <img src="assets/images/icon-pro.svg" alt="pro" />
+              </div>
+              <div class="text">
+                <div class="plan-title">Pro</div>
+                <div class="price">
+                  <div class="price-monthly cool-grey">
+                    $<span class="num">15</span>/mo
+                  </div>
+                  <div class="price-yearly">
+                    <span class="cool-grey"
+                      >$<span class="num">150</span>/yr</span
+                    >
+                    <span>2 month free</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="toggle toggle-monthly">
+            <p class="monthly">Monthly</p>
+            <div class="toggle-btn"></div>
+            <p class="yearly">Yearly</p>
+          </div>
+        </div>
+
+        <div class="step" id="step-3">
+          <div class="intro">
+            <h1>Pick add-ons</h1>
+            <p class="cool-grey">
+              Add-ons help enhance your gaming experience.
+            </p>
+          </div>
+          <div class="content">
+            <div class="row">
+              <input type="checkbox" />
+              <div class="desc">
+                <div class="service-title">Online service</div>
+                <div class="service-desc cool-grey">
+                  Access to multiplayer games
+                </div>
+              </div>
+              <div class="price">
+                <div class="price-monthly">+$<span class="num">1</span>/mo</div>
+                <div class="price-yearly">+$<span class="num">10</span>/yr</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <input type="checkbox" />
+              <div class="desc">
+                <div class="service-title">Larger storage</div>
+                <div class="service-desc cool-grey">
+                  Extra 1TB of cloud save
+                </div>
+              </div>
+              <div class="price">
+                <div class="price-monthly">+$<span class="num">2</span>/mo</div>
+                <div class="price-yearly">+$<span class="num">20</span>/yr</div>
+              </div>
+            </div>
+
+            <div class="row">
+              <input type="checkbox" />
+              <div class="desc">
+                <div class="service-title">Customizable Profile</div>
+                <div class="service-desc cool-grey">
+                  Custom theme on your profile
+                </div>
+              </div>
+              <div class="price">
+                <div class="price-monthly">+$<span class="num">2</span>/mo</div>
+                <div class="price-yearly">+$<span class="num">20</span>/yr</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="step" id="step-4">
+          <div class="intro">
+            <h1>Finishing up</h1>
+            <p class="cool-grey">
+              Double-check everything looks OK before confirming.
+            </p>
+          </div>
+          <div class="content">
+            <div class="summary">
+              <div class="summary-row">
+                <div>
+                  <div class="summary-plan"></div>
+                  <button class="change" type="button">Change</button>
+                </div>
+                <div class="summary-price"></div>
+              </div>
+              <div class="summary-row">
+                <div class="service"></div>
+              </div>
+            </div>
+            <div class="total">
+              <div class="text cool-grey">Total(per <span></span>)</div>
+              <div class="total-num"></div>
+            </div>
+          </div>
+        </div>
+        <div id="thanks" style="display: none">
+          <img src="assets/images/icon-thank-you.svg" alt="Thank you" />
+          <div class="text cool-grey">
+            Thanks for confirming your subscription! We hope you have fun using
+            our platform. If you ever need support, please feel free to email us
+            at support@loremgaming.com.
+          </div>
+        </div>
+
+        <div class="btn">
+          <button class="back" type="button" onclick="nextPrev(-1)">
+            Go Back
+          </button>
+          <button class="next" type="button" onclick="nextPrev(1)">
+            Next Step
+          </button>
+        </div>
+      </form>
+    </main>
+    <script src="main.js"></script>
+  </body>
+</html>
