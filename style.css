@@ -478,6 +478,8 @@ form {
 @media (min-width: 800px) {
   .btn {
     position: absolute;
+    height: auto;
+    bottom: 45px;
   }
 }
 
