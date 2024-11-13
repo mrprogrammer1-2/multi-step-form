@@ -182,12 +182,12 @@ h1, label {
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 @media (min-width: 800px) {
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 }
 
@@ -316,7 +316,7 @@ main {
 @media (min-width: 800px) {
   main {
     width: 800px;
-    height: 550px;
+    height: 600px;
     max-width: 90vw;
     display: flex;
     gap: 20px;
@@ -448,17 +448,17 @@ form {
 }
 
 #step-1 .content > *:not(:last-child) {
-  margin-bottom: 1rem;
+  margin-bottom: .75rem;
 }
 @media (min-width: 800px) {
   #step-1 .content > *:not(:last-child) {
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
   }
 }
 
 #step-1 .content input {
   width: 100%;
-  padding: 1rem 0.75rem;
+  padding: 0.75rem  .5rem;
   border-radius: 8px;
   border: 1px solid #ccc;
   outline: none;
@@ -483,7 +483,7 @@ form {
   .btn {
     position: absolute;
     height: auto;
-    bottom: 45px;
+    bottom: -22px;
   }
 }
 
@@ -555,6 +555,7 @@ form {
   padding: 8px 0;
   display: flex;
   justify-content: center;
+  margin-bottom: 25px;
 }
 
 .toggle-btn {
