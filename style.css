@@ -413,7 +413,11 @@ form {
 @media (min-width: 800px) {
   .step {
     border-radius: initial;
+    position: relative;
+    left: initial;
+    transform: initial;
     padding-right: 20px;
+    padding: 2rem 2rem;
   }
 }
 
